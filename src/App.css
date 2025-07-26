@@ -1,0 +1,8 @@
+body {
+  background-image: url('./assets/neon-city.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0; /* Optional, falls unerwünschter Abstand */
+  height: 100vh; /* Damit es den ganzen Viewport füllt */
+}
