@@ -4,37 +4,27 @@ import trumpImage from "./assets/trump6.png";
 
 function App() {
   return (
-    <div
-      className="min-h-screen font-sans bg-gradient-to-b from-purple-900 via-indigo-900 to-black text-gray-200"
-      style={{ textShadow: "1px 1px 2px black" }}
-    >
+    <div className="min-h-screen bg-gradient-to-br from-black via-purple-900 to-black text-white font-sans">
       {/* Header */}
-      <header className="flex flex-col items-center justify-center text-center px-6 py-20 md:py-32">
+      <header className="flex flex-col items-center justify-center text-center px-6 py-20 md:py-28">
         <img
           src={trumpImage}
-          alt="Trump6 Coin Logo"
-          className="w-28 md:w-36 rounded-xl shadow-xl mb-4"
+          alt="Trump6 Logo"
+          className="w-24 md:w-28 rounded-full shadow-2xl border-4 border-pink-500 mb-6"
         />
-        <h1 className="text-4xl md:text-6xl font-bold tracking-wide">
+        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
           Trump6 Coin
         </h1>
-        <p className="text-lg md:text-2xl mt-4 text-gray-300 max-w-xl mx-auto">
+        <p className="text-lg md:text-xl text-gray-300 max-w-2xl">
           Crypto meets politics – The revolution begins.
         </p>
 
-        <button
-          onClick={() => window.open("https://x.com/TRUMP62025", "_blank")}
-          className="mt-6 px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-full shadow-md transition-all"
-        >
-          Get Started
-        </button>
-
-        <div className="flex gap-4 mt-6">
+        <div className="flex flex-wrap gap-4 mt-6 justify-center">
           <a
             href="https://t.me/TRUMP6Groupe"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
+            className="bg-white text-black px-5 py-2 rounded-full font-medium hover:bg-gray-200 transition"
           >
             Telegram
           </a>
@@ -42,118 +32,102 @@ function App() {
             href="https://x.com/TRUMP62025"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
+            className="bg-white text-black px-5 py-2 rounded-full font-medium hover:bg-gray-200 transition"
           >
             Twitter/X
           </a>
         </div>
       </header>
 
-      {/* About Section */}
-      <section className="px-6 md:px-20 py-10">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6">About Trump6</h2>
-        <h3 className="text-xl md:text-2xl font-bold mb-4">
-          Trump6 – A Meme Coin With a Mission
-        </h3>
-        <p className="text-lg mb-4">
+      {/* About */}
+      <section className="max-w-4xl mx-auto px-6 py-12">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">About Trump6</h2>
+        <p className="text-lg text-gray-300 mb-4 text-center">
           Trump6 is more than just a token — it’s a cultural movement born from
           the boldness of the digital age. Built on the speed and freedom of the
-          Solana blockchain, Trump6 represents strength, humor, and rebellion
-          in one coin.
+          Solana blockchain, Trump6 represents strength, humor, and rebellion in
+          one coin.
         </p>
-        <p className="text-lg mb-4">No taxes. No VC control. 100% community.</p>
-        <p className="text-lg">
+        <p className="text-lg text-gray-300 mb-4 text-center">
+          No taxes. No VC control. 100% community.
+        </p>
+        <p className="text-lg text-gray-300 text-center">
           Whether you're here to hold, trade, meme, or lead, Trump6 gives you the
-          power to own your place in crypto history. Join the revolution. Make
-          memes great again.
+          power to own your place in crypto history. Join the revolution.
         </p>
       </section>
 
-      {/* Tokenomics Section */}
-      <section className="bg-black/30 px-6 md:px-20 py-10">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6">Tokenomics</h2>
-        <ul className="text-lg space-y-2 list-disc list-inside">
-          <li>Total Supply: 1,000,000,000</li>
-          <li>0% Taxes – fair and free</li>
-          <li>100% Community Driven</li>
-          <li>Deployed on Solana</li>
-        </ul>
-      </section>
-
-      {/* Team Section */}
-      <section className="px-6 md:px-20 py-10">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6">Team</h2>
-        <div className="grid md:grid-cols-3 gap-6 text-center">
-          <div className="bg-white/10 p-6 rounded-xl shadow-lg">
-            <h3 className="text-xl font-bold">Pascal M.</h3>
-            <p>Project Lead</p>
-          </div>
-          <div className="bg-white/10 p-6 rounded-xl shadow-lg">
-            <h3 className="text-xl font-bold">Stan R.</h3>
-            <p>Community & Growth</p>
-          </div>
-          <div className="bg-white/10 p-6 rounded-xl shadow-lg">
-            <h3 className="text-xl font-bold">Tamara M.</h3>
-            <p>Blockchain Developer</p>
-          </div>
+      {/* Tokenomics */}
+      <section className="bg-black/30 py-12 px-6">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-6">Tokenomics</h2>
+          <ul className="text-lg space-y-2 text-gray-300 list-disc list-inside">
+            <li>Total Supply: 1,000,000,000</li>
+            <li>0% Taxes – fair and free</li>
+            <li>100% Community Driven</li>
+            <li>Deployed on Solana</li>
+          </ul>
         </div>
       </section>
 
-      {/* Roadmap Section */}
-      <section className="px-6 md:px-20 py-10">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6">Roadmap</h2>
-        <pre
-          style={{
-            whiteSpace: "pre-wrap",
-            fontFamily: "inherit",
-            color: "#d1d5db",
-            textShadow: "1px 1px 2px black",
-          }}
-        >
+      {/* Team */}
+      <section className="max-w-5xl mx-auto px-6 py-12">
+        <h2 className="text-3xl font-bold mb-8 text-center">Team</h2>
+        <div className="grid md:grid-cols-3 gap-6 text-center">
+          {[
+            { name: "Pascal M.", role: "Project Lead" },
+            { name: "Stan R.", role: "Community & Growth" },
+            { name: "Tamara M.", role: "Blockchain Developer" },
+          ].map((member) => (
+            <div key={member.name} className="bg-white/10 p-6 rounded-xl shadow-md">
+              <h3 className="text-xl font-semibold">{member.name}</h3>
+              <p className="text-gray-300">{member.role}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Roadmap */}
+      <section className="bg-black/40 py-12 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-6">Roadmap</h2>
+          <pre className="whitespace-pre-wrap text-sm md:text-base text-gray-300">
 {`
-🎮 TRUMP6 Roadmap 🚀
+Phase 1: 🚀 Launch
+- Token launch on Solana
+- Website & social media setup
+- Community building & meme campaigns
+- DEX listings & influencer collabs
 
-Phase 1: Loading the Game 💾🔥
-- Launch TRUMP6 on Solana blockchain
-- Activate Website & Socials (X 🐦, Telegram ✈️, Discord 🕹️)
-- Build the Community & Launch Meme Campaigns
-- DEX Listing (Dex Screener, Birdeye, etc.)
-- Hype Push with Influencer Collabs & Twitter Raids
+Phase 2: 🔥 Growth
+- Trend on Twitter & Meme Sites
+- Partner with GTA/NFT communities
+- NFT Series Release
+- Tier 2-3 CEX listings
 
-Phase 2: Entering Vice Mode 🌴🚗
-- Trend on Crypto Twitter & Meme Pages
-- Partner with GTA-themed/Narrative Projects & Influencers
-- Drop the first GTA-Trump NFT Series
-- Target Tier 2 & 3 CEX Listings
-- Deeper Integrations with Solana Ecosystem Tools
+Phase 3: 🎯 Utility
+- Meme Quests for $TR6 rewards
+- Merch store
+- AI Meme Generator
+- Gaming & Web3 tools
 
-Phase 3: Unlocking Real Utility 🔓💰
-- Trump6 Mission Hub (Daily Meme Quests for $TR6 rewards)
-- TRUMP6 Merch Store – Pay with $TR6
-- Collaborations with Pop Culture Creators & Gaming Brands
-- Launch AI Meme Generator
-- Push Real-World Use Cases & IRL Events
-
-Phase 4: The Final Heist – Global Takeover 🌍🕶️
-- Listings on Major CEXs (Tier 1 Exchanges)
-- TRUMP6 Metaverse Strip – Interactive GTA-style Hangout Zone
-- Web3 Gaming Integrations & NFT Avatars
-- AI-Driven GTA Lore Engine
-- Long-term Community Growth & Meme Sustainability Plan
-
-🚀 The Revolution Has Just Started
+Phase 4: 🌎 Expansion
+- Major exchange listings
+- Metaverse hangout zones
+- Web3 game integrations
+- Long-term meme culture plans
 `}
-        </pre>
+          </pre>
+        </div>
       </section>
 
       {/* Footer */}
-      <footer className="text-center text-sm mt-10 py-6 border-t border-gray-700">
-        <p>© 2025 Trump6 Coin. For entertainment purposes only. Not financial advice.</p>
+      <footer className="text-center text-sm text-gray-400 py-8 border-t border-gray-700">
+        © 2025 Trump6 Coin. For entertainment only. Not financial advice.
       </footer>
     </div>
   );
 }
 
 export default App;
-
 
