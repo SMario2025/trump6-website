@@ -14,12 +14,12 @@ function App() {
         <img
           src={trumpImage}
           alt="Trump6 Coin Logo"
-          className="max-w-xs rounded-2xl shadow-xl mb-6"
+          className="w-40 md:w-56 rounded-2xl shadow-xl mb-6"
         />
         <h1 className="text-4xl md:text-6xl font-bold tracking-wide">
           Trump6 Coin
         </h1>
-        <p className="text-lg md:text-2xl mt-4 text-gray-300">
+        <p className="text-lg md:text-2xl mt-4 text-gray-300 max-w-xl mx-auto">
           Crypto meets politics – The revolution begins.
         </p>
 
