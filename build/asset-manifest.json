@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.800fca96.css",
+    "main.js": "/static/js/main.018249b1.js",
+    "static/media/trump6.png": "/static/media/trump6.429365d00bf53ab978ef.png",
+    "static/media/neon-city.webp": "/static/media/neon-city.51d105cf02e52f37b1c1.webp",
+    "index.html": "/index.html",
+    "main.800fca96.css.map": "/static/css/main.800fca96.css.map",
+    "main.018249b1.js.map": "/static/js/main.018249b1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.800fca96.css",
+    "static/js/main.018249b1.js"
+  ]
+}
