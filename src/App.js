@@ -24,6 +24,7 @@ function App() {
         <button
           onClick={() => window.open("https://x.com/TRUMP62025", "_blank")}
           className="mt-6 px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-full shadow-md transition-all"
+          aria-label="Get started with Trump6 Coin"
         >
           Get Started
         </button>
@@ -104,7 +105,7 @@ function App() {
             textShadow: "1px 1px 2px black",
           }}
         >
-          {
+          {`
 🎮 TRUMP6 Roadmap 🚀
 
 Phase 1: Loading the Game 💾🔥
@@ -136,7 +137,7 @@ Phase 4: The Final Heist – Global Takeover 🌍🕶️
 - Long-term Community Growth & Meme Sustainability Plan
 
 🚀 The Revolution Has Just Started
-}
+          `}
         </pre>
       </section>
 
@@ -148,5 +149,6 @@ Phase 4: The Final Heist – Global Takeover 🌍🕶️
 }
 
 export default App;
+
 
 
