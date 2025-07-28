@@ -1,3 +1,7 @@
+
+
+
+
 import React from "react";
 import "./App.css";
 import trumpImage from "./assets/trump6.png";
@@ -11,12 +15,12 @@ function App() {
         <img
           src={trumpImage}
           alt="Trump6 Coin Logo"
-          className="w-8 md:w-14 rounded-2xl shadow-xl mb-4 md:mb-6"
+          className="w-10 md:w-16 rounded-2xl shadow-xl mb-4 md:mb-6"
         />
         <h1 className="text-3xl md:text-6xl font-bold tracking-wide">
           Trump6 Coin
         </h1>
-        <p className="text-white text-lg md:text-xl mt-2 md:mt-4 max-w-xl mx-auto">
+        <p className="text-base md:text-2xl mt-2 md:mt-4 max-w-xl mx-auto">
           Crypto meets politics – The revolution begins.
         </p>
 
@@ -48,7 +52,7 @@ function App() {
         </div>
       </header>
 
-      <section className="px-4 md:px-20 py-8 md:py-10 text-white">
+      <section className="px-4 md:px-20 py-8 md:py-10">
         <h2 className="text-2xl md:text-4xl font-semibold mb-4 md:mb-6">About Trump6</h2>
         <p className="mb-4">
           Trump6 isn’t just another meme coin on the Solana blockchain – it’s a movement, a digital rebellion,
@@ -72,7 +76,7 @@ function App() {
           by the values of power, strategy, and loyalty.
         </p>
         <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">Why Trump6?</h3>
-        <ul className="list-disc list-inside mb-4 pl-4 text-white">
+        <ul className="list-disc list-inside mb-4 pl-4">
           <li>GTA 6 Energy: Bold, raw, and impossible to ignore.</li>
           <li>Community First: Trump6 grows stronger with every holder, every meme, and every viral push.</li>
           <li>Next-Gen Meme Coin: Built on Solana, leveraging the momentum of trending platforms like Pump.fun to go viral.</li>
@@ -99,7 +103,7 @@ function App() {
         </h2>
         <div className="w-full">
           <iframe
-            src="https://dexscreener.com/solana/5rxw2hghuefuqvpxacqf34xhdgdtday2duegihfffczs?embed=1"
+            src="https://dexscreener.com/solana/cmtfmtezkdec1hnmsgkfntqxsiazenj2vurvaytvzmee?embed=1"
             style={{ width: '100%', height: '500px', border: '0' }}
             allowFullScreen
             frameBorder="0"
@@ -159,7 +163,3 @@ Phase 4: The Final Heist – Global Takeover 🌍🕶️
 }
 
 export default App;
-
-
-
-
