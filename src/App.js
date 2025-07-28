@@ -1,28 +1,125 @@
-import React, { useMemo } from "react";
+import React from "react";
 import "./App.css";
 import trumpImage from "./assets/trump6.png";
 
-// Solana Wallet Adapter Imports
-import {
-  ConnectionProvider,
-  WalletProvider,
-  useWallet,
-} from "@solana/wallet-adapter-react";
+function App() {
+  return (
+    <div
+      className="min-h-screen font-sans bg-gradient-to-b from-purple-900 via-indigo-900 to-black text-white text-lg md:text-xl"
+    >
+      <header className="flex flex-col items-center justify-center text-center p-6 md:p-10">
+        <img
+          src={trumpImage}
+          alt="Trump6 Coin Logo"
+          className="w-8 md:w-14 rounded-2xl shadow-xl mb-4 md:mb-6"
+        />
+        <h1 className="text-3xl md:text-6xl font-bold tracking-wide">
+          Trump6 Coin
+        </h1>
+        <p className="text-white text-lg md:text-xl mt-2 md:mt-4 max-w-xl mx-auto">
+          Crypto meets politics – The revolution begins.
+        </p>
 
-import { PhantomWalletAdapter } from "@solana/wallet-adapter-wallets";
+        <div className="flex gap-3 md:gap-4 mt-4 md:mt-6 flex-wrap justify-center">
+          <a
+            href="https://x.com/TRUMP62025"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 md:px-6 py-2 md:py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-full shadow-md transition-all text-sm md:text-base font-semibold"
+          >
+            Get Started
+          </a>
+          <a
+            href="https://t.me/TRUMP6Groupe"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 md:px-6 py-2 md:py-3 bg-white text-black rounded-full shadow-md hover:bg-gray-200 transition-all text-sm md:text-base font-semibold"
+          >
+            Telegram
+          </a>
+          <a
+            href="https://x.com/TRUMP62025"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 md:px-6 py-2 md:py-3 bg-white text-black rounded-full shadow-md hover:bg-gray-200 transition-all text-sm md:text-base font-semibold"
+          >
+            Twitter/X
+          </a>
+        </div>
+      </header>
 
-import {
-  WalletModalProvider,
-  WalletMultiButton,
-} from "@solana/wallet-adapter-react-ui";
+      <section className="px-4 md:px-20 py-8 md:py-10 text-white">
+        <h2 className="text-2xl md:text-4xl font-semibold mb-4 md:mb-6">About Trump6</h2>
+        <p className="mb-4">
+          Trump6 isn’t just another meme coin on the Solana blockchain – it’s a movement, a digital rebellion,
+          and a brand with attitude, inspired by the relentless energy and underground vibe of GTA 6. In a world
+          where countless cryptocurrencies vanish into obscurity, Trump6 positions itself as a community-driven
+          coin that represents power, loyalty, and strategy.
+        </p>
+        <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">What is Trump6?</h3>
+        <p className="mb-4">
+          Trump6 is a decentralized Solana-based token that combines speed, ultra-low transaction fees, and the
+          viral energy of meme culture. This isn’t just a token you buy and forget – it’s a ticket into a global
+          community of degens and crypto rebels who are hunting for the next 100x play. Unlike short-lived meme
+          coins, Trump6 is built on solid branding, a GTA 6-inspired aesthetic, and unstoppable social media
+          hype, making it a project designed to thrive, not fade.
+        </p>
+        <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">The Vision of Trump6</h3>
+        <p className="mb-4">
+          The mission behind Trump6 is to become a digital street empire, a cryptocurrency fueled not only by
+          price action but by culture and community power. Trump6 is about owning the digital streets, just like
+          the iconic characters of GTA dominate their world. Every holder is part of a larger movement, driven
+          by the values of power, strategy, and loyalty.
+        </p>
+        <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">Why Trump6?</h3>
+        <ul className="list-disc list-inside mb-4 pl-4 text-white">
+          <li>GTA 6 Energy: Bold, raw, and impossible to ignore.</li>
+          <li>Community First: Trump6 grows stronger with every holder, every meme, and every viral push.</li>
+          <li>Next-Gen Meme Coin: Built on Solana, leveraging the momentum of trending platforms like Pump.fun to go viral.</li>
+          <li>Rewards for Diamond Hands: With unique competitions (like the 1 million Trump6 holder challenge), loyal holders are always rewarded.</li>
+        </ul>
+        <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">The Goal</h3>
+        <p className="mb-4">
+          Trump6 aims to rise as the top meme coin on Solana, while evolving into a viral brand that captures
+          attention far beyond the crypto scene. Through FOMO-driven marketing, strategic social media presence,
+          and targeted listings (CoinMarketCap, DexScreener, Raydium), Trump6 is on a clear path to dominate.
+        </p>
+        <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">The Bottom Line</h3>
+        <p>
+          Trump6 is more than just a token – it’s a statement. By buying Trump6, you’re joining a cultural
+          revolution, becoming part of a crew that thrives on hype, courage, and community strength. Trump6 is
+          built for those who want to own the streets of Web3 and secure their spot in the next generation of
+          crypto kings.
+        </p>
+      </section>
 
-import "@solana/wallet-adapter-react-ui/styles.css";
+      <section className="px-4 md:px-20 py-8 md:py-10">
+        <h2 className="text-2xl md:text-4xl font-semibold mb-4 md:mb-6 text-center text-yellow-400">
+          📊 TRUMP6 Live Chart (powered by DexScreener)
+        </h2>
+        <div className="w-full">
+          <iframe
+            src="https://dexscreener.com/solana/5rxw2hghuefuqvpxacqf34xhdgdtday2duegihfffczs?embed=1"
+            style={{ width: '100%', height: '500px', border: '0' }}
+            allowFullScreen
+            frameBorder="0"
+            title="DexScreener Chart"
+          />
+        </div>
+      </section>
 
-// Solana Mainnet Endpoint (für Entwicklung kannst du devnet nehmen)
-const network = "https://api.mainnet-beta.solana.com";
-
-// Roadmap als String (Emojis hier drin als Unicode-Strings, nicht roh in JSX)
-const roadmapText = `
+      <section className="px-4 md:px-20 py-8 md:py-10">
+        <h2 className="text-2xl md:text-4xl font-semibold mb-4 md:mb-6">Roadmap</h2>
+        <pre
+          style={{
+            whiteSpace: "pre-wrap",
+            fontFamily: "inherit",
+            color: "#ffffff",
+            textShadow: "none",
+            fontSize: "1.2rem"
+          }}
+        >
+{`
 🎮 TRUMP6 Roadmap 🚀
 
 Phase 1: Loading the Game 💾🔥
@@ -54,151 +151,15 @@ Phase 4: The Final Heist – Global Takeover 🌍🕶️
 - Long-term Community Growth & Meme Sustainability Plan
 
 🚀 The Revolution Has Just Started
-`;
-
-// Komponente für Wallet Connect Button und Status
-function WalletConnect() {
-  const { publicKey } = useWallet();
-
-  return (
-    <div className="mt-6 flex flex-col items-center">
-      <WalletMultiButton />
-      {publicKey && (
-        <p className="mt-2 text-sm text-gray-300">
-          Connected:{" "}
-          <span className="font-mono break-all">{publicKey.toBase58()}</span>
-        </p>
-      )}
+`}
+        </pre>
+      </section>
     </div>
   );
 }
 
-function App() {
-  // Wallets-Array (aktuell nur Phantom)
-  const wallets = useMemo(() => [new PhantomWalletAdapter()], []);
-
-  return (
-    <ConnectionProvider endpoint={network}>
-      <WalletProvider wallets={wallets} autoConnect>
-        <WalletModalProvider>
-          <div
-            className="min-h-screen font-sans bg-gradient-to-b from-purple-900 via-indigo-900 to-black"
-            style={{ color: "#d1d5db", textShadow: "1px 1px 2px black" }}
-          >
-            <header className="flex flex-col items-center justify-center text-center p-10">
-              <img
-                src={trumpImage}
-                alt="Trump6"
-                className="max-w-xs rounded-2xl shadow-xl mb-6"
-              />
-              <h1 className="text-4xl md:text-6xl font-bold tracking-wide">
-                Trump6 Coin
-              </h1>
-              <p className="text-lg md:text-2xl mt-4 text-gray-300">
-                Crypto meets politics – The revolution begins.
-              </p>
-
-              {/* Wallet Connect Button */}
-              <WalletConnect />
-
-              <button
-                onClick={() => window.open("https://x.com/TRUMP62025", "_blank")}
-                className="mt-6 px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-full shadow-md transition-all"
-              >
-                Get Started
-              </button>
-              <div className="flex gap-4 mt-6">
-                <a
-                  href="https://t.me/TRUMP6Groupe"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
-                >
-                  Telegram
-                </a>
-                <a
-                  href="https://x.com/TRUMP62025"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
-                >
-                  Twitter/X
-                </a>
-              </div>
-            </header>
-
-            <section className="px-6 md:px-20 py-10">
-              <h2 className="text-3xl md:text-4xl font-semibold mb-6">About Trump6</h2>
-              <h3 className="text-xl md:text-2xl font-bold mb-4">
-                Trump6 – A Meme Coin With a Mission
-              </h3>
-              <p className="text-lg mb-4">
-                Trump6 is more than just a token — it’s a cultural movement born from
-                the boldness of the digital age. Built on the speed and freedom of the
-                Solana blockchain, Trump6 represents strength, humor, and rebellion
-                in one coin.
-              </p>
-              <p className="text-lg mb-4">No taxes. No VC control. 100% community.</p>
-              <p className="text-lg">
-                Whether you're here to hold, trade, meme, or lead, Trump6 gives you the
-                power to own your place in crypto history. Join the revolution. Make
-                memes great again.
-              </p>
-            </section>
-
-            <section className="bg-black/30 px-6 md:px-20 py-10">
-              <h2 className="text-3xl md:text-4xl font-semibold mb-6">Tokenomics</h2>
-              <ul className="text-lg space-y-2 list-disc list-inside">
-                <li>Total Supply: 1,000,000,000</li>
-                <li>0% Taxes – fair and free</li>
-                <li>100% Community Driven</li>
-                <li>Deployed on Solana</li>
-              </ul>
-            </section>
-
-            <section className="px-6 md:px-20 py-10">
-              <h2 className="text-3xl md:text-4xl font-semibold mb-6">Team</h2>
-              <div className="grid md:grid-cols-3 gap-6 text-center">
-                <div className="bg-white/10 p-6 rounded-xl shadow-lg">
-                  <h3 className="text-xl font-bold">Pascal M.</h3>
-                  <p>Project Lead</p>
-                </div>
-                <div className="bg-white/10 p-6 rounded-xl shadow-lg">
-                  <h3 className="text-xl font-bold">Stan R.</h3>
-                  <p>Community & Growth</p>
-                </div>
-                <div className="bg-white/10 p-6 rounded-xl shadow-lg">
-                  <h3 className="text-xl font-bold">Tamara M.</h3>
-                  <p>Blockchain Developer</p>
-                </div>
-              </div>
-            </section>
-
-            <section className="px-6 md:px-20 py-10">
-              <h2 className="text-3xl md:text-4xl font-semibold mb-6">Roadmap</h2>
-              <pre
-                style={{
-                  whiteSpace: "pre-wrap",
-                  fontFamily: "inherit",
-                  color: "#d1d5db",
-                  textShadow: "1px 1px 2px black",
-                }}
-              >
-                {roadmapText}
-              </pre>
-            </section>
-
-            <footer className="text-center text-sm mt-10 py-6 border-t border-gray-700">
-              <p>© 2025 Trump6 Coin. For entertainment purposes only. Not financial advice.</p>
-            </footer>
-          </div>
-        </WalletModalProvider>
-      </WalletProvider>
-    </ConnectionProvider>
-  );
-}
-
 export default App;
+
 
 
 
