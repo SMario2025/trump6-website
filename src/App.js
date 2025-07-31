@@ -10,12 +10,12 @@ function App() {
         <img
           src={trumpImage}
           alt="Trump6 Logo"
-          className="w-20 md:w-24 mx-auto mb-4 rounded-xl shadow-lg"
+          className="w-16 md:w-20 mx-auto mb-6 rounded-xl shadow-lg"
         />
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
           Trump6 Coin
         </h1>
-        <p className="text-lg md:text-2xl text-gray-300 max-w-2xl mx-auto">
+        <p className="text-lg md:text-2xl text-white max-w-2xl mx-auto">
           Crypto meets politics. The most wanted meme coin on Solana.
         </p>
 
@@ -27,63 +27,56 @@ function App() {
                 "_blank"
               )
             }
-            className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-200 hover:scale-105"
+            className="bg-green-600 hover:bg-green-500 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-green-500/50"
           >
-            Buy on Pump.fun
+            💸 Buy on Pump.fun
           </button>
 
           <button
             onClick={() => window.open("https://x.com/TRUMP62025", "_blank")}
-            className="bg-pink-600 hover:bg-pink-700 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-200 hover:scale-105"
+            className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-blue-500/50"
           >
-            Twitter / X
+            🐦 Twitter / X
           </button>
 
           <button
             onClick={() => window.open("https://t.me/TRUMP6Groupe", "_blank")}
-            className="bg-white text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-gray-200 transition-all duration-200 hover:scale-105"
+            className="bg-white text-black font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-white/50"
           >
-            Telegram
+            ✈️ Telegram
           </button>
         </div>
       </header>
 
       {/* About Section */}
-      <section className="px-6 md:px-20 py-16 bg-zinc-900 text-gray-100">
+      <section className="px-6 md:px-20 py-16 bg-zinc-900 text-white">
         <div className="max-w-4xl mx-auto space-y-10">
-          <div>
-            <h2 className="text-3xl font-bold text-yellow-400 mb-2">About Trump6</h2>
-            <p>
-              Trump6 isn’t just another meme coin on the Solana blockchain – it’s a movement, a digital rebellion,
-              and a brand with attitude, inspired by the relentless energy and underground vibe of GTA 6.
-            </p>
-          </div>
+          <h2 className="text-3xl font-bold text-yellow-400 mb-4">About Trump6</h2>
 
-          <div>
-            <h3 className="text-2xl font-semibold mb-2">What is Trump6?</h3>
-            <p>
-              A decentralized Solana-based token with speed, low fees, and meme momentum.
-              A coin you don’t just hold – you live it. Trump6 is fueled by hype, community and chaos.
-            </p>
-          </div>
+          <p>
+            Trump6 isn’t just another meme coin on the Solana blockchain – it’s a movement, a digital rebellion,
+            and a brand with attitude, inspired by the relentless energy and underground vibe of GTA 6.
+          </p>
 
-          <div>
-            <h3 className="text-2xl font-semibold mb-2">Why Trump6?</h3>
-            <ul className="list-disc list-inside space-y-2 pl-2">
-              <li>⚡ GTA 6 energy – bold and impossible to ignore.</li>
-              <li>👥 Community-first: every holder is family.</li>
-              <li>🔥 Pump.fun-powered virality.</li>
-              <li>💎 Rewards for loyal diamond hands.</li>
-            </ul>
-          </div>
+          <h3 className="text-2xl font-semibold">What is Trump6?</h3>
+          <p>
+            A decentralized Solana-based token with speed, low fees, and meme momentum.
+            A coin you don’t just hold – you live it. Trump6 is fueled by hype, community and chaos.
+          </p>
 
-          <div>
-            <h3 className="text-2xl font-semibold mb-2">The Goal</h3>
-            <p>
-              Become Solana’s top meme coin, dominate crypto Twitter, and build a movement that outlasts hype.
-              This is Trump6. You’re either in or in the way.
-            </p>
-          </div>
+          <h3 className="text-2xl font-semibold">Why Trump6?</h3>
+          <ul className="list-disc list-inside pl-4 space-y-2">
+            <li>⚡ GTA 6 energy – bold and impossible to ignore.</li>
+            <li>👥 Community-first: every holder is family.</li>
+            <li>🔥 Pump.fun-powered virality.</li>
+            <li>💎 Rewards for loyal diamond hands.</li>
+          </ul>
+
+          <h3 className="text-2xl font-semibold">The Goal</h3>
+          <p>
+            Become Solana’s top meme coin, dominate crypto Twitter, and build a movement that outlasts hype.
+            This is Trump6. You’re either in or in the way.
+          </p>
         </div>
       </section>
 
@@ -107,44 +100,58 @@ function App() {
         <h2 className="text-3xl font-bold text-yellow-400 mb-6 text-center">
           🗺️ Trump6 Roadmap
         </h2>
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto text-gray-200">
-          <div className="bg-black/40 p-6 rounded-xl shadow-inner">
-            <h3 className="text-xl font-bold mb-2">Phase 1: Loading the Game 💾</h3>
-            <ul className="list-disc list-inside space-y-1 text-sm">
-              <li>Launch on Solana</li>
-              <li>Website & Socials live</li>
-              <li>Meme Campaigns</li>
-              <li>DEX Listings</li>
-              <li>Influencer Collabs</li>
-            </ul>
-          </div>
-          <div className="bg-black/40 p-6 rounded-xl shadow-inner">
-            <h3 className="text-xl font-bold mb-2">Phase 2: Vice Mode 🌴</h3>
-            <ul className="list-disc list-inside space-y-1 text-sm">
-              <li>GTA-themed NFT Drop</li>
-              <li>Crypto Twitter Hype</li>
-              <li>Tier 2–3 CEX Listings</li>
-              <li>Pop Culture Collabs</li>
-            </ul>
-          </div>
-          <div className="bg-black/40 p-6 rounded-xl shadow-inner">
-            <h3 className="text-xl font-bold mb-2">Phase 3: Real Utility 🔓</h3>
-            <ul className="list-disc list-inside space-y-1 text-sm">
-              <li>Mission Hub (Daily Quests)</li>
-              <li>Merch Store</li>
-              <li>AI Meme Generator</li>
-              <li>IRL Events</li>
-            </ul>
-          </div>
-          <div className="bg-black/40 p-6 rounded-xl shadow-inner">
-            <h3 className="text-xl font-bold mb-2">Phase 4: Global Takeover 🌍</h3>
-            <ul className="list-disc list-inside space-y-1 text-sm">
-              <li>Tier 1 CEX Listings</li>
-              <li>Trump6 Metaverse Strip</li>
-              <li>Web3 Gaming Integrations</li>
-              <li>GTA Lore Engine (AI)</li>
-            </ul>
-          </div>
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {[
+            {
+              title: "Phase 1: Loading the Game 💾",
+              items: [
+                "Launch on Solana",
+                "Website & Socials live",
+                "Meme Campaigns",
+                "DEX Listings",
+                "Influencer Collabs",
+              ],
+            },
+            {
+              title: "Phase 2: Vice Mode 🌴",
+              items: [
+                "GTA-themed NFT Drop",
+                "Crypto Twitter Hype",
+                "Tier 2–3 CEX Listings",
+                "Pop Culture Collabs",
+              ],
+            },
+            {
+              title: "Phase 3: Real Utility 🔓",
+              items: [
+                "Mission Hub (Daily Quests)",
+                "Merch Store",
+                "AI Meme Generator",
+                "IRL Events",
+              ],
+            },
+            {
+              title: "Phase 4: Global Takeover 🌍",
+              items: [
+                "Tier 1 CEX Listings",
+                "Trump6 Metaverse Strip",
+                "Web3 Gaming Integrations",
+                "GTA Lore Engine (AI)",
+              ],
+            },
+          ].map((phase, index) => (
+            <div
+              key={index}
+              className="bg-black/40 p-6 rounded-xl shadow-inner space-y-2"
+            >
+              <h3 className="text-xl font-bold mb-1">{phase.title}</h3>
+              <ul className="list-disc list-inside text-sm">
+                {phase.items.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -157,10 +164,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
