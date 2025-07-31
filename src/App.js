@@ -1,4 +1,4 @@
-// App.js
+
 import React from "react";
 import "./App.css";
 import trumpImage from "./assets/trump6.png";
@@ -24,15 +24,7 @@ function App() {
         >
           Get Started
         </button>
-        <div className="flex flex-wrap justify-center gap-4 mt-6">
-          <a
-            href="https://pump.fun/coin/5T2kRTnXGGdfsjsY7zNMrhoVvXKWVFt8MRMVZDk7pump"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
-          >
-            💸 Buy on Pump.fun
-          </a>
+        <div className="flex gap-4 mt-6">
           <a
             href="https://t.me/TRUMP6Groupe"
             target="_blank"
@@ -63,6 +55,12 @@ function App() {
           isn’t just a coin — it’s your ticket to becoming a digital kingpin in
           a world where power, strategy, and loyalty rule.
         </p>
+        <p className="text-lg mb-4">
+          We’re building an exclusive community of 500 strong before we launch
+          — because real power comes from unity. Join us early, stake your
+          claim, and be part of a movement that’s about more than just profits;
+          it’s about dominating the game.
+        </p>
         <p className="text-lg">
           Ready to roll with the big players? Secure your spot in the Trump6
           crew and help us rewrite the rules of crypto. The streets are
@@ -73,7 +71,7 @@ function App() {
       <section className="bg-black/30 px-6 md:px-20 py-10">
         <h2 className="text-3xl md:text-4xl font-semibold mb-6">Tokenomics</h2>
         <ul className="text-lg space-y-2 list-disc list-inside">
-          <li>Total Supply: 1,000,000,000</li>
+          <li>Total Supply: 6,000,000,000</li>
           <li>0% Taxes – fair and free</li>
           <li>100% Community Driven</li>
           <li>Deployed on Solana</li>
@@ -84,15 +82,15 @@ function App() {
         <h2 className="text-3xl md:text-4xl font-semibold mb-6">Team</h2>
         <div className="grid md:grid-cols-3 gap-6 text-center">
           <div className="bg-white/10 p-6 rounded-xl shadow-lg">
-            <h3 className="text-xl font-bold">Pascal M.</h3>
+            <h3 className="text-xl font-bold">Kevin R.</h3>
             <p>Founder & Visionary</p>
           </div>
           <div className="bg-white/10 p-6 rounded-xl shadow-lg">
-            <h3 className="text-xl font-bold">Stan R.</h3>
+            <h3 className="text-xl font-bold">Jessica L.</h3>
             <p>Marketing & Community</p>
           </div>
           <div className="bg-white/10 p-6 rounded-xl shadow-lg">
-            <h3 className="text-xl font-bold">Tamara M.</h3>
+            <h3 className="text-xl font-bold">Daniel M.</h3>
             <p>Smart Contract Dev</p>
           </div>
         </div>
