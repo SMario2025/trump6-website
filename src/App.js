@@ -148,7 +148,7 @@ function Section({ title, color, children }) {
   return (
     <div>
       <h2 className={`text-3xl font-bold mb-4 ${color}`}>{title}</h2>
-      <div className="text-white/90 leading-relaxed space-y-2">
+      <div className="text-white leading-relaxed space-y-2">
         {children}
       </div>
     </div>
