@@ -10,7 +10,7 @@ function App() {
         <img
           src={trumpImage}
           alt="Trump6 Logo"
-          className="w-28 md:w-36 mx-auto mb-6 drop-shadow-xl rounded-2xl"
+          className="w-20 md:w-24 mx-auto mb-4 rounded-xl shadow-lg"
         />
         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
           Trump6 Coin
@@ -20,27 +20,31 @@ function App() {
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mt-8">
-          <a
-            href="https://pump.fun/coin/5T2kRTnXGGdfsjsY7zNMrhoVvXKWVFt8MRMVZDk7pump"
-            target="_blank"
-            className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition transform hover:scale-105"
+          <button
+            onClick={() =>
+              window.open(
+                "https://pump.fun/coin/5T2kRTnXGGdfsjsY7zNMrhoVvXKWVFt8MRMVZDk7pump",
+                "_blank"
+              )
+            }
+            className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-200 hover:scale-105"
           >
             Buy on Pump.fun
-          </a>
-          <a
-            href="https://x.com/TRUMP62025"
-            target="_blank"
-            className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition transform hover:scale-105"
+          </button>
+
+          <button
+            onClick={() => window.open("https://x.com/TRUMP62025", "_blank")}
+            className="bg-pink-600 hover:bg-pink-700 text-white font-semibold px-6 py-3 rounded-xl shadow-md transition-all duration-200 hover:scale-105"
           >
             Twitter / X
-          </a>
-          <a
-            href="https://t.me/TRUMP6Groupe"
-            target="_blank"
-            className="bg-white text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-200 transition transform hover:scale-105"
+          </button>
+
+          <button
+            onClick={() => window.open("https://t.me/TRUMP6Groupe", "_blank")}
+            className="bg-white text-black font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-gray-200 transition-all duration-200 hover:scale-105"
           >
             Telegram
-          </a>
+          </button>
         </div>
       </header>
 
@@ -153,6 +157,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
