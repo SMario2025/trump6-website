@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import "./App.css";
 import trumpImage from "./assets/trump6.png";
 
@@ -6,22 +7,42 @@ function App() {
   const [showChart, setShowChart] = useState(false);
 
   return (
-    <div className="min-h-screen bg-black text-white font-sans">
-      {/* Hero Section */}
+    <div className="min-h-screen bg-black text-white font-sans overflow-x-hidden">
+      {/* Hero Section with Animation */}
       <header className="px-6 py-16 bg-gradient-to-b from-zinc-900 to-black text-center">
-        <img
+        <motion.img
           src={trumpImage}
           alt="Trump6 Logo"
-          className="w-16 md:w-20 mx-auto mb-6 rounded-xl shadow-lg"
+          className="w-14 md:w-16 mx-auto mb-4 rounded-xl shadow-xl"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
         />
-        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
-          Trump6 Coin
-        </h1>
-        <p className="text-lg md:text-2xl text-white max-w-2xl mx-auto">
-          Crypto meets politics. The most wanted meme coin on Solana.
-        </p>
 
-        <div className="flex flex-wrap justify-center gap-4 mt-8">
+        <motion.h1
+          className="text-4xl md:text-6xl font-extrabold tracking-tight mb-4"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+        >
+          Trump6 Coin
+        </motion.h1>
+
+        <motion.p
+          className="text-lg md:text-2xl text-white max-w-2xl mx-auto"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+        >
+          Crypto meets politics. The most wanted meme coin on Solana.
+        </motion.p>
+
+        <motion.div
+          className="flex flex-wrap justify-center gap-4 mt-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 1 }}
+        >
           <button
             onClick={() =>
               window.open(
@@ -29,32 +50,32 @@ function App() {
                 "_blank"
               )
             }
-            className="bg-green-600 hover:bg-green-500 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-green-500/50"
+            className="bg-gradient-to-r from-green-400 to-emerald-600 hover:from-green-500 hover:to-green-700 text-white font-bold px-6 py-3 rounded-full shadow-lg transition transform hover:scale-105"
           >
             💸 Buy on Pump.fun
           </button>
 
           <button
             onClick={() => window.open("https://x.com/TRUMP62025", "_blank")}
-            className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-blue-500/50"
+            className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-bold px-6 py-3 rounded-full shadow-lg transition transform hover:scale-105"
           >
             🐦 Twitter / X
           </button>
 
           <button
             onClick={() => window.open("https://t.me/TRUMP6Groupe", "_blank")}
-            className="bg-white text-black font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-white/50"
+            className="bg-white text-black font-bold px-6 py-3 rounded-full shadow-lg hover:bg-gray-100 transition transform hover:scale-105"
           >
             ✈️ Telegram
           </button>
 
           <button
             onClick={() => setShowChart(!showChart)}
-            className="bg-yellow-500 hover:bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-yellow-400/50"
+            className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-6 py-3 rounded-full shadow-lg transition transform hover:scale-105"
           >
             📈 {showChart ? "Hide Chart" : "Show Chart"}
           </button>
-        </div>
+        </motion.div>
       </header>
 
       {/* About Section */}
@@ -89,7 +110,7 @@ function App() {
         </div>
       </section>
 
-      {/* Chart Section (conditionally rendered) */}
+      {/* Chart Section (Toggle) */}
       {showChart && (
         <section className="px-6 md:px-20 py-16 bg-zinc-900 text-white">
           <h2 className="text-3xl font-bold text-center text-yellow-400 mb-6">
