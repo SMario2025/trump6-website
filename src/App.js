@@ -1,145 +1,121 @@
-
+// App.js – NEU START
 import React from "react";
 import "./App.css";
 import trumpImage from "./assets/trump6.png";
 
-function App() {
+export default function App() {
   return (
-    <div className="min-h-screen font-sans bg-gradient-to-b from-purple-900 via-indigo-900 to-black" style={{ color: "#d1d5db", textShadow: "1px 1px 2px black" }}>
-      <header className="flex flex-col items-center justify-center text-center p-10">
+    <div className="min-h-screen bg-gradient-to-br from-black via-purple-950 to-black text-white font-sans">
+      {/* HERO */}
+      <header className="flex flex-col items-center justify-center text-center py-20 px-6">
         <img
           src={trumpImage}
-          alt="Trump6"
-          className="max-w-xs rounded-2xl shadow-xl mb-6"
+          alt="Trump6 Logo"
+          className="w-16 md:w-24 rounded-full shadow-2xl border-4 border-pink-500 mb-6"
         />
-        <h1 className="text-4xl md:text-6xl font-bold tracking-wide">
-          Trump6 Coin
+        <h1 className="text-5xl md:text-6xl font-extrabold tracking-wide mb-4">
+          TRUMP6 COIN
         </h1>
-        <p className="text-lg md:text-2xl mt-4 text-gray-300">
-          Crypto meets politics – The revolution begins.
+        <p className="text-2xl md:text-3xl text-white max-w-xl">
+          The most wanted meme coin on Solana. Own the streets. Lead the movement.
         </p>
-        <button
-          onClick={() => window.open("https://x.com/TRUMP62025", "_blank")}
-          className="mt-6 px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-full shadow-md transition-all"
-        >
-          Get Started
-        </button>
-        <div className="flex gap-4 mt-6">
+        <div className="flex gap-4 flex-wrap justify-center mt-8">
           <a
-            href="https://t.me/TRUMP6Groupe"
+            href="https://pump.fun/coin/5T2kRTnXGGdfsjsY7zNMrhoVvXKWVFt8MRMVZDk7pump"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
+            className="bg-gradient-to-r from-pink-600 to-fuchsia-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition"
           >
-            Telegram
+            💸 Buy on Pump.fun
           </a>
           <a
             href="https://x.com/TRUMP62025"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
+            className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
           >
-            Twitter/X
+            🐦 Twitter/X
+          </a>
+          <a
+            href="https://t.me/TRUMP6Groupe"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
+          >
+            ✈️ Telegram
           </a>
         </div>
       </header>
 
-      <section className="px-6 md:px-20 py-10">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6">About Trump6</h2>
-        <h3 className="text-xl md:text-2xl font-bold mb-4">
-          Trump6 – Own the Streets, Own the Future
-        </h3>
-        <p className="text-lg mb-4">
-          Welcome to Trump6, the next-gen crypto coin that channels the raw
-          energy and unstoppable hustle of GTA6’s underground empire. This
-          isn’t just a coin — it’s your ticket to becoming a digital kingpin in
-          a world where power, strategy, and loyalty rule.
-        </p>
-        <p className="text-lg mb-4">
-          We’re building an exclusive community of 500 strong before we launch
-          — because real power comes from unity. Join us early, stake your
-          claim, and be part of a movement that’s about more than just profits;
-          it’s about dominating the game.
-        </p>
-        <p className="text-lg">
-          Ready to roll with the big players? Secure your spot in the Trump6
-          crew and help us rewrite the rules of crypto. The streets are
-          waiting — will you answer the call?
+      {/* ABOUT */}
+      <section className="px-6 md:px-20 py-16 max-w-4xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-pink-400 mb-4">🚀 About Trump6</h2>
+        <p className="text-white text-xl leading-relaxed">
+          Trump6 is not just a coin – it's a symbol of power, rebellion and loyalty. Born from the chaotic energy of GTA6 and built on the lightning-fast Solana blockchain, Trump6 empowers degens to rise. No taxes. No VCs. Just a community ready to flip the game.
         </p>
       </section>
 
-      <section className="bg-black/30 px-6 md:px-20 py-10">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6">Tokenomics</h2>
-        <ul className="text-lg space-y-2 list-disc list-inside">
-          <li>Total Supply: 6,000,000,000</li>
-          <li>0% Taxes – fair and free</li>
-          <li>100% Community Driven</li>
-          <li>Deployed on Solana</li>
+      {/* TOKENOMICS */}
+      <section className="bg-black/30 px-6 md:px-20 py-16 max-w-4xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 mb-4">📊 Tokenomics</h2>
+        <ul className="list-disc list-inside text-white text-lg space-y-2">
+          <li>Total Supply: 1,000,000,000</li>
+          <li>0% Taxes – fair & free</li>
+          <li>100% Community Owned</li>
+          <li>Built on Solana</li>
         </ul>
       </section>
 
-      <section className="px-6 md:px-20 py-10">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6">Team</h2>
+      {/* ROADMAP */}
+      <section className="px-6 md:px-20 py-16 max-w-4xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-green-400 mb-4">🗺 Roadmap</h2>
+        <ol className="list-decimal list-inside text-white text-lg space-y-2">
+          <li>Launch TRUMP6 on Solana + socials live</li>
+          <li>Build community & meme takeover</li>
+          <li>Influencer partnerships & NFT preview</li>
+          <li>DEX + CEX listings (Tier 2–3)</li>
+          <li>Utility Hub + Merch Drop + IRL Events</li>
+        </ol>
+      </section>
+
+      {/* TEAM */}
+      <section className="px-6 md:px-20 py-16 max-w-4xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-cyan-400 mb-6">👥 Team</h2>
         <div className="grid md:grid-cols-3 gap-6 text-center">
-          <div className="bg-white/10 p-6 rounded-xl shadow-lg">
-            <h3 className="text-xl font-bold">Kevin R.</h3>
-            <p>Founder & Visionary</p>
+          <div className="bg-white/10 p-6 rounded-xl shadow-md">
+            <h3 className="text-xl font-bold text-white">Pascal M.</h3>
+            <p>Founder</p>
           </div>
-          <div className="bg-white/10 p-6 rounded-xl shadow-lg">
-            <h3 className="text-xl font-bold">Jessica L.</h3>
-            <p>Marketing & Community</p>
+          <div className="bg-white/10 p-6 rounded-xl shadow-md">
+            <h3 className="text-xl font-bold text-white">Stan R.</h3>
+            <p>Community</p>
           </div>
-          <div className="bg-white/10 p-6 rounded-xl shadow-lg">
-            <h3 className="text-xl font-bold">Daniel M.</h3>
-            <p>Smart Contract Dev</p>
+          <div className="bg-white/10 p-6 rounded-xl shadow-md">
+            <h3 className="text-xl font-bold text-white">Tamara M.</h3>
+            <p>Blockchain Dev</p>
           </div>
         </div>
       </section>
 
-      <section className="px-6 md:px-20 py-10">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-6">Roadmap</h2>
-        <pre style={{ whiteSpace: "pre-wrap", fontFamily: "inherit", color: "#d1d5db", textShadow: "1px 1px 2px black" }}>
-{`
-🎮 TRUMP6 Roadmap 🚀
-
-Phase 1: Loading the Game 💾🔥
-- Launch TRUMP6 on Solana blockchain
-- Activate Website & Socials (X 🐦, Telegram ✈️, Discord 🕹️)
-- Build the Community & Launch Meme Campaigns
-- DEX Listing (Dex Screener, Birdeye, etc.)
-- Hype Push with Influencer Collabs & Twitter Raids
-
-Phase 2: Entering Vice Mode 🌴🚗
-- Trend on Crypto Twitter & Meme Pages
-- Partner with GTA-themed/Narrative Projects & Influencers
-- Drop the first GTA-Trump NFT Series
-- Target Tier 2 & 3 CEX Listings
-- Deeper Integrations with Solana Ecosystem Tools
-
-Phase 3: Unlocking Real Utility 🔓💰
-- Trump6 Mission Hub (Daily Meme Quests for $TR6 rewards)
-- TRUMP6 Merch Store – Pay with $TR6
-- Collaborations with Pop Culture Creators & Gaming Brands
-- Launch AI Meme Generator
-- Push Real-World Use Cases & IRL Events
-
-Phase 4: The Final Heist – Global Takeover 🌍🕶️
-- Listings on Major CEXs (Tier 1 Exchanges)
-- TRUMP6 Metaverse Strip – Interactive GTA-style Hangout Zone
-- Web3 Gaming Integrations & NFT Avatars
-- AI-Driven GTA Lore Engine
-- Long-term Community Growth & Meme Sustainability Plan
-
-🚀 The Revolution Has Just Started
-`}
-        </pre>
+      {/* CHART */}
+      <section className="px-6 md:px-20 py-16">
+        <h2 className="text-3xl font-bold text-center text-yellow-400 mb-6">
+          📈 Live Chart
+        </h2>
+        <div className="w-full max-w-5xl mx-auto rounded-xl overflow-hidden border border-fuchsia-600 shadow-lg">
+          <iframe
+            src="https://dexscreener.com/solana/cmtfmtezkdec1hnmsgkfntqxsiazenj2vurvaytvzmee?embed=1"
+            style={{ width: "100%", height: "500px", border: "none" }}
+            allowFullScreen
+            title="Trump6 Chart"
+          />
+        </div>
       </section>
 
-      <footer className="text-center text-sm mt-10 py-6 border-t border-gray-700">
-        <p>© 2025 Trump6 Coin. For entertainment purposes only. Not financial advice.</p>
+      {/* FOOTER */}
+      <footer className="text-center py-8 border-t border-fuchsia-800 text-sm text-white/60">
+        © 2025 Trump6 Coin. Powered by memes. Not financial advice.
       </footer>
     </div>
   );
 }
-
-export default App;
