@@ -52,7 +52,7 @@ function App() {
       
       <section className="text-white text-xl py-20 px-6 md:px-20">
         <div className="text-center mb-6">
-          <button onClick={() => setShowAbout(!showAbout)} className="bg-purple-700 hover:bg-purple-800 text-white text-lg font-semibold py-3 px-8 rounded-full shadow-lg hover:scale-105 transition duration-300">
+          <button onClick={() => setShowAbout(!showAbout)} className="bg-purple-700 hover:bg-purple-800 text-white font-bold text-xl px-10 py-4 rounded-full shadow-lg transition duration-300 ease-in-out hover:scale-105">
             {showAbout ? 'Hide' : 'Show'} About Trump6
           </button>
         </div>
@@ -192,7 +192,7 @@ function App() {
           href="https://pump.fun/coin/5T2kRTnXGGdfsjsY7zNMrhoVvXKWVFt8MRMVZDk7pump"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-purple-700 hover:bg-purple-800 text-white font-semibold text-xl px-8 py-4 rounded-full shadow-lg hover:scale-105 transition duration-300"
+          className="inline-block bg-purple-700 hover:bg-purple-800 text-white font-bold text-xl px-10 py-4 rounded-full shadow-lg transition duration-300 ease-in-out hover:scale-105"
         >
           🚀 Buy on Pump.fun
         </a>
@@ -211,7 +211,7 @@ function App() {
             href="https://x.com/TRUMP62025"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-purple-700 hover:bg-purple-800 px-6 py-3 rounded-full text-white text-xl font-semibold tracking-wide shadow-lg hover:scale-105 transition flex items-center gap-2"
+            className="bg-purple-700 hover:bg-purple-800 text-white font-bold text-xl px-10 py-4 rounded-full shadow-lg transition duration-300 ease-in-out hover:scale-105 flex items-center gap-2"
           >
             <span>🐦 Folge uns auf X</span>
           </a>
@@ -238,3 +238,4 @@ function App() {
 }
 
 export default App;
+
