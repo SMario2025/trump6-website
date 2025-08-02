@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div
-      className="text-white text-xl min-h-screen"
+      className="text-white text-xl min-h-screen flex flex-col min-h-screen"
       style={{
         backgroundImage: "url('/neon-city.webp')",
         backgroundSize: "cover",
@@ -220,9 +220,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
