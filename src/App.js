@@ -51,7 +51,7 @@ function App() {
       
       <section className="text-white text-xl py-20 px-6 md:px-20">
         <div className="text-center mb-6">
-          <button onClick={() => setShowAbout(!showAbout)} className="bg-pink-600 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded">
+          <button onClick={() => setShowAbout(!showAbout)} className="bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white text-lg font-semibold py-3 px-6 rounded-full shadow-lg hover:scale-105 transition duration-300">
             {showAbout ? 'Hide' : 'Show'} About Trump6
           </button>
         </div>
@@ -85,7 +85,7 @@ function App() {
 
       <section className="text-white text-xl py-20 px-6 md:px-20 border-t border-gray-800">
         <div className="text-center mb-6">
-          <button onClick={() => setShowManifest(!showManifest)} className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
+          <button onClick={() => setShowManifest(!showManifest)} className="bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700 text-white text-lg font-semibold py-3 px-6 rounded-full shadow-lg hover:scale-105 transition duration-300">
             {showManifest ? 'Hide' : 'Show'} Trump6 Manifest
           </button>
         </div>
@@ -132,7 +132,7 @@ function App() {
 
       <section className="bg-transparent text-white text-xl py-20 px-6 md:px-20 border-t border-gray-800">
         <div className="text-center mb-6">
-          <button onClick={() => setShowSpecial(!showSpecial)} className="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded">
+          <button onClick={() => setShowSpecial(!showSpecial)} className="bg-gradient-to-r from-purple-500 to-fuchsia-600 hover:from-purple-600 hover:to-fuchsia-700 text-white text-lg font-semibold py-3 px-6 rounded-full shadow-lg hover:scale-105 transition duration-300">
             {showSpecial ? 'Hide' : 'Show'} What Makes Trump6 Special
           </button>
         </div>
@@ -220,6 +220,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
