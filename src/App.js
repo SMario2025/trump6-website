@@ -5,19 +5,16 @@ function App() {
 
   return (
     <div className="bg-black text-white min-h-screen">
-      {/* Hero Section */}
+      
       <section
         className="h-screen w-full bg-cover bg-center text-white flex flex-col justify-center items-center relative"
         style={{ backgroundImage: "url('/neon-city.webp')" }}
       >
         <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
-        $1
-          </div>
-          </div>
-        </div>
+        
       </section>
 
-      {/* Embedded DexScreener Chart */}
+      
       {showChart && (
         <section className="bg-black py-12 px-6 md:px-20 text-center">
           <h2 className="text-3xl font-bold text-yellow-400 mb-6">
@@ -35,7 +32,7 @@ function App() {
         </section>
       )}
 
-      {/* Über Trump6 Section */}
+      
       <section className="bg-black text-white py-20 px-6 md:px-20">
         <div className="max-w-4xl mx-auto text-xl text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-pink-500">
@@ -66,7 +63,7 @@ function App() {
 
       
 
-      {/* Trump6 Manifest (Deutsch) */}
+      
       
 
 
@@ -182,7 +179,7 @@ function App() {
         </div>
       </section>
 
-      {/* Footer */}
+      
       <footer className="bg-black text-gray-500 py-10 text-center border-t border-gray-800">
         <p className="text-lg">Developed with ❤️ by</p>
         <p className="mt-2 text-xl font-semibold tracking-wide text-white">
@@ -194,8 +191,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
