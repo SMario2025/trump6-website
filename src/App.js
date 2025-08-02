@@ -51,7 +51,7 @@ function App() {
       )}
 
       
-      <section className="text-white text-xl py-20 px-6 md:px-20$1 absolute top-0 left-0 w-full z-10">
+      <section className="text-white text-xl py-20 px-6 md:px-20 relative w-full z-10">
         <div className="text-center mb-6">
           <button onClick={() => setShowAbout(!showAbout)} className="bg-purple-700 hover:bg-purple-800 text-white font-bold text-xl px-10 py-4 rounded-full shadow-lg transition duration-300 ease-in-out hover:scale-105">
             {showAbout ? 'Hide' : 'Show'} About Trump6
@@ -85,7 +85,7 @@ function App() {
               )}
       </section>
 
-      <section className="text-white text-xl py-20 px-6 md:px-20$1 absolute top-0 left-0 w-full z-10">
+      <section className="text-white text-xl py-20 px-6 md:px-20 relative w-full z-10">
         <div className="text-center mb-6">
           <button onClick={() => setShowManifest(!showManifest)} className="bg-purple-700 hover:bg-purple-800 text-white text-lg font-semibold py-3 px-8 rounded-full shadow-lg hover:scale-105 transition duration-300">
             {showManifest ? 'Hide' : 'Show'} Trump6 Manifest
@@ -182,7 +182,7 @@ function App() {
         )}
       </section>
 
-      <section className="text-white text-xl py-20 px-6 md:px-20$1 absolute top-0 left-0 w-full z-10">
+      <section className="text-white text-xl py-20 px-6 md:px-20 relative w-full z-10">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-green-400">
           💸 Buy Trump6 Token
         </h2>
@@ -198,7 +198,7 @@ function App() {
         </button>
       </section>
 
-      <section className="text-white text-xl py-20 px-6 md:px-20$1 absolute top-0 left-0 w-full z-10">
+      <section className="text-white text-xl py-20 px-6 md:px-20 relative w-full z-10">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-purple-400">
           🌐 Join the Trump6 Movement
         </h2>
@@ -238,6 +238,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
