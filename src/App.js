@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 
 function App() {
+  const [showAbout, setShowAbout] = useState(false);
+  const [showManifest, setShowManifest] = useState(false);
+  const [showSpecial, setShowSpecial] = useState(false);
   const [showChart, setShowChart] = useState(false);
 
   return (
@@ -47,6 +50,12 @@ function App() {
 
       
       <section className="text-white text-xl py-20 px-6 md:px-20">
+        <div className="text-center mb-6">
+          <button onClick={() => setShowAbout(!showAbout)} className="bg-pink-600 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded">
+            {showAbout ? 'Hide' : 'Show'} About Trump6
+          </button>
+        </div>
+        {showAbout && (
         <div className="max-w-4xl mx-auto text-xl text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-pink-500">
             About Trump6
@@ -71,16 +80,16 @@ function App() {
             ))}
           </div>
         </div>
+              )}
       </section>
 
-      
-
-      
-      
-
-
-
-<section className="text-white text-xl py-20 px-6 md:px-20 border-t border-gray-800">
+      <section className="text-white text-xl py-20 px-6 md:px-20 border-t border-gray-800">
+        <div className="text-center mb-6">
+          <button onClick={() => setShowManifest(!showManifest)} className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
+            {showManifest ? 'Hide' : 'Show'} Trump6 Manifest
+          </button>
+        </div>
+        {showManifest && (
   <div className="max-w-4xl mx-auto text-xl">
     <h2 className="text-4xl md:text-5xl font-bold mb-8 text-yellow-400 text-center">
       🔥 Trump6 Manifest
@@ -118,9 +127,16 @@ function App() {
       Trump6 is more than just a token – it’s a statement. By buying Trump6, you’re joining a cultural revolution, becoming part of a crew that thrives on hype, courage, and community strength. Trump6 is built for those who want to own the streets of Web3 and secure their spot in the next generation of crypto kings.
     </p>
   </div>
-</section>
+        )}
+      </section>
 
-<section className="bg-transparent text-white text-xl py-20 px-6 md:px-20 border-t border-gray-800">
+      <section className="bg-transparent text-white text-xl py-20 px-6 md:px-20 border-t border-gray-800">
+        <div className="text-center mb-6">
+          <button onClick={() => setShowSpecial(!showSpecial)} className="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded">
+            {showSpecial ? 'Hide' : 'Show'} What Makes Trump6 Special
+          </button>
+        </div>
+        {showSpecial && (
   <div className="max-w-4xl mx-auto text-xl">
     <h2 className="text-4xl md:text-5xl font-bold mb-8 text-yellow-400 text-center">
       ⭐ What Makes Trump6 Special?
@@ -161,7 +177,8 @@ function App() {
       Trump6 is special because it combines hype, branding, community power, and cutting-edge technology into one unique project. It stands for courage, loyalty, and the drive to dominate the “digital streets” of Web3.
     </p>
   </div>
-</section>
+        )}
+      </section>
 
       <section className="text-white text-xl py-20 px-6 md:px-20 text-center border-t border-gray-800">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-purple-400">
@@ -203,6 +220,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
