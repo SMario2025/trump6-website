@@ -181,6 +181,23 @@ function App() {
       </section>
 
       <section className="text-white text-xl py-20 px-6 md:px-20 text-center border-t border-gray-800">
+        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-green-400">
+          💸 Buy Trump6 Token
+        </h2>
+        <p className="text-xl text-white mb-10">
+          Ready to join the movement? Connect your wallet and grab your $TRUMP6 tokens now!
+        </p>
+        <a
+          href="https://pump.fun/coin/5T2kRTnXGGdfsjsY7zNMrhoVvXKWVFt8MRMVZDk7pump"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold text-xl px-8 py-4 rounded-full shadow-lg hover:scale-105 transition"
+        >
+          🚀 Buy on Pump.fun
+        </a>
+      </section>
+
+      <section className="text-white text-xl py-20 px-6 md:px-20 text-center border-t border-gray-800">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-purple-400">
           🌐 Join the Trump6 Movement
         </h2>
@@ -220,3 +237,4 @@ function App() {
 }
 
 export default App;
+
