@@ -10,14 +10,6 @@ function App() {
   
 
   return (
-    
-
-  const [showAbout, setShowAbout] = useState(false);
-  const [showManifest, setShowManifest] = useState(false);
-  const [showSpecial, setShowSpecial] = useState(false);
-  const [showChart, setShowChart] = useState(false);
-
-  return (
     <div className="text-white text-xl min-h-screen flex flex-col min-h-screen relative overflow-hidden"
       style={{
         backgroundImage: "url('/neon-city.webp')",
@@ -250,5 +242,6 @@ function App() {
 }
 
 export default App;
+
 
 
