@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ConnectionProvider, WalletProvider } from "@solana/wallet-adapter-react";
-import { WalletModalProvider, WalletMultiButton } from "@solana/wallet-adapter-react-ui";
+import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
 import { PhantomWalletAdapter } from "@solana/wallet-adapter-wallets";
 import { clusterApiUrl } from "@solana/web3.js";
 import "@solana/wallet-adapter-react-ui/styles.css";
@@ -203,9 +203,7 @@ function App() {
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-green-400">
           💸 Buy Trump6 Token
         </h2>
-        <div className="mb-6 flex justify-center">
-          <WalletMultiButton className="!bg-purple-700 hover:!bg-purple-800 text-white font-bold text-xl px-10 py-4 rounded-full shadow-lg transition duration-300 ease-in-out" />
-        </div>
+        
         <p className="text-xl text-white mb-10">
           Ready to join the movement? Connect your wallet and grab your $TRUMP6 tokens now!
         </p>
