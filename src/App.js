@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 
 function App() {
@@ -51,7 +52,7 @@ function App() {
       
       <section className="text-white text-xl py-20 px-6 md:px-20">
         <div className="text-center mb-6">
-          <button onClick={() => setShowAbout(!showAbout)} className="bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white text-lg font-semibold py-3 px-6 rounded-full shadow-lg hover:scale-105 transition duration-300">
+          <button onClick={() => setShowAbout(!showAbout)} className="bg-purple-700 hover:bg-purple-800 text-white text-lg font-semibold py-3 px-8 rounded-full shadow-lg hover:scale-105 transition duration-300">
             {showAbout ? 'Hide' : 'Show'} About Trump6
           </button>
         </div>
@@ -85,7 +86,7 @@ function App() {
 
       <section className="text-white text-xl py-20 px-6 md:px-20 border-t border-gray-800">
         <div className="text-center mb-6">
-          <button onClick={() => setShowManifest(!showManifest)} className="bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700 text-white text-lg font-semibold py-3 px-6 rounded-full shadow-lg hover:scale-105 transition duration-300">
+          <button onClick={() => setShowManifest(!showManifest)} className="bg-purple-700 hover:bg-purple-800 text-white text-lg font-semibold py-3 px-8 rounded-full shadow-lg hover:scale-105 transition duration-300">
             {showManifest ? 'Hide' : 'Show'} Trump6 Manifest
           </button>
         </div>
@@ -132,7 +133,7 @@ function App() {
 
       <section className="bg-transparent text-white text-xl py-20 px-6 md:px-20 border-t border-gray-800">
         <div className="text-center mb-6">
-          <button onClick={() => setShowSpecial(!showSpecial)} className="bg-gradient-to-r from-purple-500 to-fuchsia-600 hover:from-purple-600 hover:to-fuchsia-700 text-white text-lg font-semibold py-3 px-6 rounded-full shadow-lg hover:scale-105 transition duration-300">
+          <button onClick={() => setShowSpecial(!showSpecial)} className="bg-purple-700 hover:bg-purple-800 text-white text-lg font-semibold py-3 px-8 rounded-full shadow-lg hover:scale-105 transition duration-300">
             {showSpecial ? 'Hide' : 'Show'} What Makes Trump6 Special
           </button>
         </div>
@@ -191,7 +192,7 @@ function App() {
           href="https://pump.fun/coin/5T2kRTnXGGdfsjsY7zNMrhoVvXKWVFt8MRMVZDk7pump"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold text-xl px-8 py-4 rounded-full shadow-lg hover:scale-105 transition"
+          className="inline-block bg-purple-700 hover:bg-purple-800 text-white font-semibold text-xl px-8 py-4 rounded-full shadow-lg hover:scale-105 transition duration-300"
         >
           🚀 Buy on Pump.fun
         </a>
@@ -210,7 +211,7 @@ function App() {
             href="https://x.com/TRUMP62025"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-r from-pink-500 to-purple-600 px-6 py-3 rounded-full text-white text-xl font-semibold tracking-wide shadow-lg hover:scale-105 transition flex items-center gap-2"
+            className="bg-purple-700 hover:bg-purple-800 px-6 py-3 rounded-full text-white text-xl font-semibold tracking-wide shadow-lg hover:scale-105 transition flex items-center gap-2"
           >
             <span>🐦 Folge uns auf X</span>
           </a>
@@ -218,7 +219,7 @@ function App() {
             href="https://t.me/TRUMP6Groupe"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gradient-to-r from-blue-500 to-cyan-500 px-6 py-3 rounded-full text-white text-xl font-semibold tracking-wide shadow-lg hover:scale-105 transition flex items-center gap-2"
+            className="bg-purple-700 hover:bg-purple-800 px-6 py-3 rounded-full text-white text-xl font-semibold tracking-wide shadow-lg hover:scale-105 transition flex items-center gap-2"
           >
             <span>📢 Telegram-Gruppe</span>
           </a>
@@ -237,4 +238,3 @@ function App() {
 }
 
 export default App;
-
