@@ -1,11 +1,19 @@
-"dependencies": {
-  "@solana/web3.js": "^1.95.2",
-  "@solana/wallet-adapter-base": "^0.9.14",
-  "@solana/wallet-adapter-react": "^0.15.18",
-  "@solana/wallet-adapter-react-ui": "^0.9.19",
-  "@solana/wallet-adapter-wallets": "^0.18.0",
-  "react": "^18.3.1",
-  "react-dom": "^18.3.1",
-  "react-scripts": "5.0.1"
+{
+  "name": "trump6-website",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@solana/web3.js": "^1.95.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
 }
+
 
