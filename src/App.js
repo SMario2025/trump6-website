@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-import { ConnectionProvider, WalletProvider } from "@solana/wallet-adapter-react";
-import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
-import { PhantomWalletAdapter } from "@solana/wallet-adapter-wallets";
-import { clusterApiUrl } from "@solana/web3.js";
-import "@solana/wallet-adapter-react-ui/styles.css";
+
 
 function App() {
   const [showAbout, setShowAbout] = useState(false);
@@ -11,14 +7,10 @@ function App() {
   const [showSpecial, setShowSpecial] = useState(false);
   const [showChart, setShowChart] = useState(false);
 
-  const network = "mainnet-beta";
-  const endpoint = clusterApiUrl(network);
-  const wallets = [new PhantomWalletAdapter()];
+  
 
   return (
-    <ConnectionProvider endpoint={endpoint}>
-      <WalletProvider wallets={wallets} autoConnect>
-        <WalletModalProvider>
+    
 
   const [showAbout, setShowAbout] = useState(false);
   const [showManifest, setShowManifest] = useState(false);
@@ -26,8 +18,7 @@ function App() {
   const [showChart, setShowChart] = useState(false);
 
   return (
-    <div
-      className="text-white text-xl min-h-screen flex flex-col min-h-screen"
+    <div className="text-white text-xl min-h-screen flex flex-col min-h-screen relative overflow-hidden"
       style={{
         backgroundImage: "url('/neon-city.webp')",
         backgroundSize: "cover",
@@ -68,7 +59,7 @@ function App() {
       )}
 
       
-      <section className="text-white text-xl py-20 px-6 md:px-20">
+      <section className="text-white text-xl py-20 px-6 md:px-20$1 absolute top-0 left-0 w-full z-10">
         <div className="text-center mb-6">
           <button onClick={() => setShowAbout(!showAbout)} className="bg-purple-700 hover:bg-purple-800 text-white font-bold text-xl px-10 py-4 rounded-full shadow-lg transition duration-300 ease-in-out hover:scale-105">
             {showAbout ? 'Hide' : 'Show'} About Trump6
@@ -102,7 +93,7 @@ function App() {
               )}
       </section>
 
-      <section className="text-white text-xl py-20 px-6 md:px-20 border-t border-gray-800">
+      <section className="text-white text-xl py-20 px-6 md:px-20$1 absolute top-0 left-0 w-full z-10">
         <div className="text-center mb-6">
           <button onClick={() => setShowManifest(!showManifest)} className="bg-purple-700 hover:bg-purple-800 text-white text-lg font-semibold py-3 px-8 rounded-full shadow-lg hover:scale-105 transition duration-300">
             {showManifest ? 'Hide' : 'Show'} Trump6 Manifest
@@ -199,13 +190,13 @@ function App() {
         )}
       </section>
 
-      <section className="text-white text-xl py-20 px-6 md:px-20 text-center border-t border-gray-800">
+      <section className="text-white text-xl py-20 px-6 md:px-20$1 absolute top-0 left-0 w-full z-10">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-green-400">
           💸 Buy Trump6 Token
         </h2>
         
         <p className="text-xl text-white mb-10">
-          Ready to join the movement? Connect your wallet and grab your $TRUMP6 tokens now!
+          Ready to join the movement? Grab your $TRUMP6 tokens now on Pump.fun!
         </p>
         <button
           onClick={() => window.open("https://pump.fun/coin/5T2kRTnXGGdfsjsY7zNMrhoVvXKWVFt8MRMVZDk7pump", "_blank")}
@@ -215,7 +206,7 @@ function App() {
         </button>
       </section>
 
-      <section className="text-white text-xl py-20 px-6 md:px-20 text-center border-t border-gray-800">
+      <section className="text-white text-xl py-20 px-6 md:px-20$1 absolute top-0 left-0 w-full z-10">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-purple-400">
           🌐 Join the Trump6 Movement
         </h2>
@@ -254,11 +245,10 @@ function App() {
   );
 }
 
-        </WalletModalProvider>
-      </WalletProvider>
-    </ConnectionProvider>
+        
   );
 }
 
 export default App;
+
 
