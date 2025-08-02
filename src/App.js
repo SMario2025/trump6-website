@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import { ConnectionProvider, WalletProvider } from "@solana/wallet-adapter-react";
 import { WalletModalProvider, WalletMultiButton } from "@solana/wallet-adapter-react-ui";
@@ -208,7 +206,6 @@ function App() {
         <div className="mb-6 flex justify-center">
           <WalletMultiButton className="!bg-purple-700 hover:!bg-purple-800 text-white font-bold text-xl px-10 py-4 rounded-full shadow-lg transition duration-300 ease-in-out" />
         </div>
-        </h2>
         <p className="text-xl text-white mb-10">
           Ready to join the movement? Connect your wallet and grab your $TRUMP6 tokens now!
         </p>
@@ -266,3 +263,4 @@ function App() {
 }
 
 export default App;
+
