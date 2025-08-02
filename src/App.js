@@ -1,7 +1,27 @@
 
+
 import React, { useState } from "react";
+import { ConnectionProvider, WalletProvider } from "@solana/wallet-adapter-react";
+import { WalletModalProvider, WalletMultiButton } from "@solana/wallet-adapter-react-ui";
+import { PhantomWalletAdapter } from "@solana/wallet-adapter-wallets";
+import { clusterApiUrl } from "@solana/web3.js";
+import "@solana/wallet-adapter-react-ui/styles.css";
 
 function App() {
+  const [showAbout, setShowAbout] = useState(false);
+  const [showManifest, setShowManifest] = useState(false);
+  const [showSpecial, setShowSpecial] = useState(false);
+  const [showChart, setShowChart] = useState(false);
+
+  const network = "mainnet-beta";
+  const endpoint = clusterApiUrl(network);
+  const wallets = [new PhantomWalletAdapter()];
+
+  return (
+    <ConnectionProvider endpoint={endpoint}>
+      <WalletProvider wallets={wallets} autoConnect>
+        <WalletModalProvider>
+
   const [showAbout, setShowAbout] = useState(false);
   const [showManifest, setShowManifest] = useState(false);
   const [showSpecial, setShowSpecial] = useState(false);
@@ -185,17 +205,19 @@ function App() {
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-green-400">
           💸 Buy Trump6 Token
         </h2>
+        <div className="mb-6 flex justify-center">
+          <WalletMultiButton className="!bg-purple-700 hover:!bg-purple-800 text-white font-bold text-xl px-10 py-4 rounded-full shadow-lg transition duration-300 ease-in-out" />
+        </div>
+        </h2>
         <p className="text-xl text-white mb-10">
           Ready to join the movement? Connect your wallet and grab your $TRUMP6 tokens now!
         </p>
-        <a
-          href="https://pump.fun/coin/5T2kRTnXGGdfsjsY7zNMrhoVvXKWVFt8MRMVZDk7pump"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-purple-700 hover:bg-purple-800 text-white font-bold text-xl px-10 py-4 rounded-full shadow-lg transition duration-300 ease-in-out hover:scale-105"
+        <button
+          onClick={() => window.open("https://pump.fun/coin/5T2kRTnXGGdfsjsY7zNMrhoVvXKWVFt8MRMVZDk7pump", "_blank")}
+          className="bg-purple-700 hover:bg-purple-800 text-white font-bold text-xl px-10 py-4 rounded-full shadow-lg transition duration-300 ease-in-out hover:scale-105"
         >
           🚀 Buy on Pump.fun
-        </a>
+        </button>
       </section>
 
       <section className="text-white text-xl py-20 px-6 md:px-20 text-center border-t border-gray-800">
@@ -237,5 +259,10 @@ function App() {
   );
 }
 
-export default App;
+        </WalletModalProvider>
+      </WalletProvider>
+    </ConnectionProvider>
+  );
+}
 
+export default App;
